@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="CaseForm.css">
+  <script type="text/javascript">
+    function enhanceNote() {
+        document.getElementById("tags").style.display="block";
+    }
+    function load() {
+        document.getElementById("tags").style.display="none";
+    }
+</script>
+</head>
+<body onload="load()">
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>CREATE CASE</h3>
+    <h4>COMMENT</h4>
+    <fieldset>
+        <textarea placeholder="Add Comment" tabindex="5"></textarea>
+    </fieldset>
+    <div id="tags">
+    <span class="tag label label-info" col="12">
+        <span>wordpress website</span>
+        <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a> 
+    </span>
+    <span class="tag label label-info">
+        <span>migration tool</span>
+        <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a> 
+    </span>
+    <span class="tag label label-info">
+        <span>many visitors</span>
+        <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a> 
+    </span>
+    <span class="tag label label-info">
+        <span>error message</span>
+        <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a> 
+    </span>
+    <span class="tag label label-info">
+        <span>old server plan</span>
+        <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a> 
+    </span>
+    <span class="tag label label-info">
+        <span>other clients</span>
+        <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a> 
+    </span>
+    <span class="tag label label-info">
+        <span>internal hosts</span>
+        <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a> 
+    </span>
+    </div>
+    <a href="https://www.w3schools.com/html/">Add Attachment</a>
+    <fieldset>
+        <input type="button" id="case-enhance" onclick="enhanceNote()" value="ENHANCE NOTE" />
+    </fieldset>
+    <h4>CHAT ID</h4>
+    <fieldset>
+      <input placeholder="Chat ID" type="text" tabindex="1" autofocus>
+    </fieldset>
+    <fieldset>
+      <button name="saveCase" type="submit" id="case-save" data-submit="...Sending">SAVE CASE</button>
+    </fieldset>
+    <fieldset>
+        <button name="cancelCase" type="submit" id="case-cancel" data-submit="...Sending">CANCEL</button>
+      </fieldset>
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
